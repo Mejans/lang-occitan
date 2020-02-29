@@ -1,0 +1,61 @@
+flarum-flags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      flag_posts_label: Senhalar los messatges
+      view_flags_label: Veire los messatges senhalats
+
+    # These translations are used in the Flags Settings modal dialog.
+    settings:
+      guidelines_url_label: Ligam cap a las règlas de la comunautat
+      title: Paramètres dels senhalaments
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Flag Post modal dialog.
+    flag_post:
+      confirmation_message: Mercés d’aver senhalat aqueste messatge. Los moderators s’encargaràn tre que pòscan.
+      dismiss_button: => core.ref.okay
+      reason_inappropriate_label: pas adaptat
+      reason_inappropriate_text: "Aqueste messatge es ofensant, vulgar o respècta pas las <a>règlas de la comunautat</a>."
+      reason_off_topic_label: "fòra-subjècte"
+      reason_off_topic_text: Aqueste messatge es pasCe message n’est pas pertinent per la discussion actuala e deuriá èsser desplaçat endacòm mai.
+      reason_other_label: autre
+      reason_spam_label: indesirable
+      reason_spam_text: Aqueste messatge es publicitari.
+      submit_button: => flarum-flags.ref.flag_post
+      title: => flarum-flags.ref.flag_post
+
+    # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
+    flagged_posts:
+      empty_text: Cap de messatge pas senhalat
+      item_text: "{username} dins <em>{discussion}</em>"
+      title: => flarum-flags.ref.flagged_posts
+      tooltip: => flarum-flags.ref.flagged_posts
+
+    # These translations are used by the frame displayed around flagged posts.
+    post:
+      dismiss_flag_button: Anullar lo senhalament
+      flagged_by_text: "{username} o a senhalat"
+      flagged_by_with_reason_text: "{username} o a senhalat coma {reason}"
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      flag_button: Senhalar
+
+  ##
+  # REUSED KEYS - The following keys are used in several locations and should not be used directly in code.
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    flag_post: Senhalar lo messatge
+    flagged_posts: Messatges senhalats

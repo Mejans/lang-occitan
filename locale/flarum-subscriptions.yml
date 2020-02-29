@@ -1,0 +1,54 @@
+flarum-subscriptions:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      following_tooltip: => flarum-subscriptions.ref.following
+      ignoring_tooltip: => flarum-subscriptions.ref.ignoring
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      unfollow_button: Se desabonar
+      unignore_button: Ignorar pas mai
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      following_link: Abonaments
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      new_post_text: "{username} a publicat un messatge"
+
+    # These translations are used in the Settings page.
+    settings:
+      follow_after_reply_label: Seguir automaticament las discussions ont respondi
+      notify_new_post_label: Qualqu’un publica dins una discussion que seguissi
+
+    # These translations are used in the subscription menu displayed to the right of the post stream.
+    sub_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      following_button: => flarum-subscriptions.ref.following
+      following_text: M’enviar una notificacion quand qualqu’un respond.
+      ignoring_button: => flarum-subscriptions.ref.ignoring
+      ignoring_text: M’enviar pas jamai de notificacions. Rescondre la lista discussions.
+      not_following_button: Pas abonat
+      not_following_text: "M’enviar pas una notificacion quand qualqu’un me @menciona."
+      notify_alert_tooltip: Recebre una notificacion sul forum quand i a de messatges novèls
+      notify_email_tooltip: Recebre un corrièl quand i a de messatges novèls
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    follow: Seguir
+    following: Abonat
+    ignoring: Ignorat

@@ -1,0 +1,106 @@
+flarum-tags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Basics page.
+    basics:
+      tags_label: => flarum-tags.ref.tags
+
+    # These translations are used in the Edit Tag modal dialog.
+    edit_tag:
+      color_label: => core.ref.color
+      delete_tag_button: Suprimir l’etiqueta
+      delete_tag_confirmation: "Volètz vertadièrament suprimir aquesta etiqueta? Las discussions publicadas jos aquesta etiqueta seràn pas suprimidas."
+      description_label: Descripcion
+      hide_label: Rescondre de la lista de discussions
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
+      name_label: => flarum-tags.ref.name
+      name_placeholder: => flarum-tags.ref.name
+      slug_label: Identificant
+      submit_button: => core.ref.okay
+      title: => flarum-tags.ref.create_tag
+
+    # These translations are used in the navigation bar.
+    nav:
+      tags_button: => flarum-tags.ref.tags
+      tags_text: Gerir la lista de las etiquetas disponiblas per organizar las discussions.
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      allow_edit_tags_label: Autorizar la modificacion de las etiquetas
+      restrict_by_tag_heading: Restreindr per etiqueta
+      tag_discussions_label: Ajustar d’etiquetas a las discussions
+
+    # These translations are used in the Tag Settings modal dialog.
+    tag_settings:
+      range_separator_text: " cap a "
+      required_primary_heading: Limit del nombre d’etiquetas primàrias
+      required_primary_text: Picatz lo nombre minimal e maximal d’etiquetas primàrias que pòdon èsser ajustadas a una discussion.
+      required_secondary_heading: Limit del nombre d’etiquetas segondàrias
+      required_secondary_text: Picatz lo nombre minimal e maximal d’etiquetas segondàrias que pòdon èsser ajustadas a una discussion.
+      title: Paramètres de las etiquetas
+
+    # These translations are used in the Tags page.
+    tags:
+      about_tags_text: "Las etiquetas permeton de triar las discussions. Las etiquetas primàrias son similaras a las tradicionalas categorias, pòdon èsser dispausadas en dos nivèls. Las etiquetas segondàrias pòdon pas èsser ordenadas en nivèls, mas pòdon èsser utilizadas coma de categorias minoras."
+      create_tag_button: => flarum-tags.ref.create_tag
+      primary_heading: Etiquetas primàrias
+      secondary_heading: Etiquetas segondàrias
+      settings_button: Paramètres
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Choose Tags modal dialog.
+    choose_tags:
+      choose_primary_placeholder: "Seleccionatz una etiqueta primària|Seleccionatz {count} etiquetas primàrias"
+      choose_secondary_placeholder: "Seleccionatz una etiqueta segondària|Seleccionatz {count} etiquetas segondàrias"
+      edit_title: "Modificar las etiquetas de {title}"
+      submit_button: => core.ref.okay
+      title: Seleccionatz d’etiquetas de vòstra discussion
+
+    # These translations are used by the composer when starting a discussion.
+    composer_discussion:
+      choose_tags_link: Seleccionatz d’etiquetas
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      edit_tags_button: Modificar las etiquetas
+
+    header:
+      back_to_tags_tooltip: "Tornar a la lista d’etiquetas"
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      more_link: Mai…
+      tags_link: => flarum-tags.ref.tags
+      untagged_link: Cap d’etiqueta
+
+    # These translations are displayed between posts in the post stream.
+    post_stream:
+      added_and_removed_tags_text: "{username} a ajustat {tagsAdded} e a suprimit {tagsRemoved}."
+      added_tags_text: "{username} a ajustat {tagsAdded}."
+      removed_tags_text: "{username} a suprimit {tagsRemoved}."
+      tags_text: "l’etiqueta {tags}|las etiquetas {tags}"
+
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # This translation is displayed in place of the name of a tag that's been deleted.
+    deleted_tag_text: Suprimida
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    create_tag: Crear una etiqueta
+    name: Nom
+    tags: Etiquetas
